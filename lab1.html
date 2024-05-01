@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Battleship Game</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>	
+        <h1 class="game-title">Battleship Game</h1>
+
+        <div id="game-info">
+            <h2>Turn: <span id="turn-display"></span></h2>
+            <h2>Info: <span id="info"></span></h2>
+            <div class="stats-container" id="player-stats">
+                <p>Your Hits: <span id="player-hits">0</span></p>
+                <p>Your Misses: <span id="player-misses">0</span></p>
+            </div>
+            <div class="stats-container" id="computer-stats">
+                <p>Computer Hits: <span id="computer-hits">0</span></p>
+                <p>Computer Misses: <span id="computer-misses">0</span></p>
+                <button id="start-button">Start Game</button>
+            </div>
+        </div>
+        
+        <div id="boards-container"></div>
+        
+        <div class="ships-container">
+            <div id="0" class="display-destroyer destroyer" draggable="true"></div>
+            <div id="1" class="display-submarine submarine" draggable="true"></div>
+            <div id="2" class="display-cruiser cruiser" draggable="true"></div>
+            <div id="3" class="display-battleship battleship" draggable="true"></div>
+            <div id="4" class="display-carrier carrier" draggable="true"></div>
+        </div>
+        
+        <button id="rotate-button">Rotate Ships</button>
+        <button id="restart-button">Restart Game</button>
+        
+        <script src="script.js"></script>
+    </body>
+</html>
